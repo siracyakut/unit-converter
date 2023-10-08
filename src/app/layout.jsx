@@ -3,6 +3,9 @@ import { Roboto } from "next/font/google";
 import Providers from "@/store/providers";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import BaseSize from "@/components/base-size";
+import Tables from "@/components/tables";
+import About from "@/components/about";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -17,7 +20,12 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <Providers>
           <Header />
-          {children}
+          <div className="flex flex-1 flex-col items-center gap-14 justify-center">
+            {children}
+            <BaseSize />
+            <Tables />
+            <About />
+          </div>
           <Footer />
         </Providers>
       </body>

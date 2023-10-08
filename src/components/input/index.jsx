@@ -59,7 +59,7 @@ const Input = ({ name, shortName }) => {
       {name}
       <input
         className={classNames(
-          "appearance-none text-center border outline-none w-80 h-14 pl-4 pr-12 py-4 font-normal text-[38.4px] transition-all",
+          "appearance-none text-center border outline-none w-80 h-14 pl-4 pr-12 py-4 font-normal text-[2.4rem] transition-all",
           {
             "text-[#1A79FF]": converter.mode === shortName,
             "border-[#DCDCDC]": !(
@@ -76,7 +76,7 @@ const Input = ({ name, shortName }) => {
         onChange={(e) => handleChange(e)}
         onFocus={(e) => setMode(e.target.name === "px" ? "rem" : "px")}
       ></input>
-      <span className="absolute top-[50px] right-4 pointer-events-none">
+      <span className="absolute top-[3.125rem] right-4 pointer-events-none">
         {shortName}
       </span>
     </label>

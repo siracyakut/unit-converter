@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="w-1/2 md:w-1/3 flex flex-col gap-3.5 mb-3">
-      <h3 className="text-[22.4px] text-center">Convert pixels to REM</h3>
+      <h3 className="text-[1.4rem] text-center">Convert pixels to REM</h3>
       <p>
         This calculator converts pixels to the CSS unit REM. The conversion is
         based on the default <code>font-size</code> of 16 pixel, but can be
