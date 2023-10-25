@@ -12,20 +12,21 @@ const ConvertArea = ({ primary }) => {
         {primary === "px" ? (
           <>
             <Input name="Pixels" shortName="px" />
-            <Link
-              className="hidden md:block mt-8 cursor-pointer"
-              href="/rem-to-px"
-            >
-              <GoArrowSwitch size={24} />
-            </Link>
+            <div className="flex items-center justify-center w-full md:w-auto md:mt-8 cursor-pointer">
+              <Link href="/rem-to-px">
+                <GoArrowSwitch size={24} />
+              </Link>
+            </div>
             <Input name="REM" shortName="rem" />
           </>
         ) : (
           <>
             <Input name="REM" shortName="rem" />
-            <Link className="hidden md:block mt-8 cursor-pointer" href="/">
-              <GoArrowSwitch size={24} />
-            </Link>
+            <div className="flex items-center justify-center w-full md:w-auto md:mt-8 cursor-pointer">
+              <Link href="/">
+                <GoArrowSwitch size={24} />
+              </Link>
+            </div>
             <Input name="Pixels" shortName="px" />
           </>
         )}
